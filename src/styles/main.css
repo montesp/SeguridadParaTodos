@@ -4,6 +4,7 @@
     --header: #2CBF6C;
     --button-color: #2EA658;
     --text-color: #eeeeee;
+    --shadow: rgba(46, 166, 88, .5) ;
 }
 
 * {
@@ -92,6 +93,14 @@ body {
     background-repeat: none;
     background-size: cover;
     opacity: 0.8;
+    transition: box-shadow 0.6s;
+}
+
+.article-card:hover {
+    box-shadow:
+    5px 4px 1px 1px rgba( 0 , 0 , 0 , 0.5) ,
+    -5px -4px 1px 1px rgba( 0 , 0 , 0 , 0.5);
+
 }
 
 .article-card h4 {
@@ -113,4 +122,9 @@ body {
     color: var(--text-color);
     background-color: var(--button-color);
     opacity: 1;
+    transition: box-shadow 0.5s;
+}
+
+.article-card button:hover {
+    box-shadow: 3px 3px 2px 1px var(--shadow);
 }
