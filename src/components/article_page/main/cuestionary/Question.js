@@ -1,12 +1,15 @@
 import React from "react";
+import TitleQuestion from './TItleQuestion';
+import Answers from './Answers';
 
 
-function Question(props){
+function Question({question}){
     return(
         <fieldset className="question-container">
-            {props.children}
+            <TitleQuestion question = {question}/>
+            <Answers question ={question}/>
         </fieldset>
     )
 }
 
-export { Question };
+export default Question ;

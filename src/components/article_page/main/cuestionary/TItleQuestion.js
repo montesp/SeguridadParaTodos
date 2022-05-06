@@ -1,10 +1,12 @@
 import React from "react";
+import { Question } from "./Question";
 
 
-function TitleQuestion(props){
+function TitleQuestion({question}){
     return(
-        <p className="question">Pregunta</p>
+        <p className="question">{question.title}</p>
     )
 }
 
-export { TitleQuestion };
+
+export default  TitleQuestion ;

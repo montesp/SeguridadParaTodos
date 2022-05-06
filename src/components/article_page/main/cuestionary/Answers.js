@@ -1,15 +1,31 @@
 import React from "react";
-import { Option } from "./Option";
+import Option from "./Option";
 
 
-function Answers(props){
+function Answers({question}){
     return(
-        <div className="answers">
-            <Option/>
-            <Option/>
-            <Option/>
-        </div>
+        <form className="answers">
+            {deployOptions(question)}
+        </form>
     )
 }
 
-export { Answers };
+function deployOptions(question){
+    let answers = question.answers
+    let answersHtml = []
+    for (let id = 0; id < answers.length; id++) {
+        const answer = answers[id];
+        answersHtml.push(
+            <Option props= {
+                {
+                    answer:{answer,id},
+                    answerStatus:question
+                }
+            }/>
+        )
+    }
+
+    return answersHtml
+}
+
+export default Answers ;

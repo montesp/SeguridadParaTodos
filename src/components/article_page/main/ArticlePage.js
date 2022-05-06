@@ -1,4 +1,5 @@
 import React from "react";
+import Cuestionario from "./cuestionary/Quest"
 
 function ArticlePage({props}){
     return(
@@ -8,6 +9,10 @@ function ArticlePage({props}){
             </img>
             <div>
                 {props.body}
+            </div>
+            <h1 className="cuestionario-title">Cuestionario</h1>
+            <div>
+                <Cuestionario questions = {props.questions}/>
             </div>
         </section>
     )

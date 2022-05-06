@@ -1,13 +1,17 @@
 import React from "react";
 
 
-function Option(props){
+function Option({props}){
     return(
         <div className="option">
-            <input type="radio" id="anw1" name="anw" value="anw1" checked/>
-            <label for="anw1">Respuesta 1</label>
+            <input onClick={()=> props.answerStatus.setResponse(props.answer.id)} 
+                type="radio" id="anw1" name="anw" value="0" 
+            />
+            <label >{props.answer.answer}</label>
         </div>
     )
 }
 
-export { Option };
+
+
+export default  Option ;

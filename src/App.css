@@ -16,7 +16,7 @@
 
 html {
   font-family: 'Roboto', sans-serif;
-  font-size: 62.5%;
+  font-size: 80%;
 }
 
 body {
@@ -162,9 +162,7 @@ h4{
 .question-container {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  height: 320px;
-  min-height: 280px;
+  width: 100%;
   margin: 20px auto 10px;
   border: 1px solid #6c6c6c;
   border-radius: 10px;
@@ -179,16 +177,22 @@ h4{
 }
 
 .answers {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
+  background: #f9fffc;
+  padding: 10px 20px;
+  margin: 20px auto;
+  border: solid #bfd7c9 1px;
+
 }
 
 .option {
   display: flex;
   align-items: center;
-  margin: 20px auto 10px;
+  margin: 10px auto 10px;
   height: 50px;
   font-size: 2.2rem;
+  color: gray;
 }
 
 .option input {
@@ -215,3 +219,21 @@ h4{
   border-radius: 40px;
   align-self: center;
 }
+.cuestionario-title{
+  font-size: 10rem;
+  margin: 10vh;
+  margin-top: 20vh!important;
+  text-align: center;
+}
+
+.quet-foot{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quet-foot span{
+  color: #2CBF6C
+}
+
+
