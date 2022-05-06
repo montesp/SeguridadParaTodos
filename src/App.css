@@ -156,3 +156,62 @@ h4{
  .ArticlePage-card{
    padding-bottom:5rem;
  }
+
+
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 320px;
+  min-height: 280px;
+  margin: 20px auto 10px;
+  border: 1px solid #6c6c6c;
+  border-radius: 10px;
+  box-shadow: 2px 1px 5px rgba(4,4,4,0.8);
+}
+
+.question {
+  margin-top: 20px;
+
+  text-align: center;
+  font-size: 2.8rem;
+}
+
+.answers {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  margin: 20px auto 10px;
+  height: 50px;
+  font-size: 2.2rem;
+}
+
+.option input {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.option label {
+  margin-left: .8rem;
+}
+
+.exam-button {
+  background-color: #2CBF6C;
+  width: 180px;
+  min-width: 160px;
+  height: 60px;
+  min-height: 50px;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 1.8rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 40px;
+  align-self: center;
+}
