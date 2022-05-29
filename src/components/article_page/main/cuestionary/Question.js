@@ -1,6 +1,7 @@
 import React from "react";
-import TitleQuestion from './TItleQuestion';
+import TitleQuestion from './TitleQuestion';
 import Answers from './Answers';
+import './Question.css';
 
 
 function Question({question}){

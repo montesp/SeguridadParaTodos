@@ -1,6 +1,6 @@
 import React from "react";
 import Option from "./Option";
-
+import './Answers.css'
 
 function Answers({question}){
     return(

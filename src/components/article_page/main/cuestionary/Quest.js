@@ -66,4 +66,4 @@ function createQuestion(question){
 }
 
 
-export default Quest ;
+export { Quest } ;

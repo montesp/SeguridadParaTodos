@@ -1,5 +1,5 @@
 import React from "react";
-import Cuestionario from "./cuestionary/Quest"
+import {Quest} from "./cuestionary/Quest"
 import './ArticlePage.css';
 
 function ArticlePage({props}){
@@ -16,10 +16,13 @@ function ArticlePage({props}){
             <div className="paragraphs-container">
                 {props.body}
             </div>
-            <h1 className="cuestionario-title">Cuestionario</h1>
-            <div>
-                <Cuestionario questions = {props.questions}/>
+            <div className="quest-container">
+                <h1 className="cuestionario-title">Cuestionario</h1>
+                <div>
+                    <Quest questions = {props.questions}/>
+                </div>
             </div>
+           
         </section>
     )
 }
