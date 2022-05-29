@@ -3,7 +3,6 @@ import { Article } from "./Article";
 
 function ArticlesContainer({
     children,
-    changeHeader,
     setChangeHeader,
 }){
 

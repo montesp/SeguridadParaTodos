@@ -15,7 +15,6 @@ function App() {
       >
       </HeaderContainer>
       <Main
-      changeHeader={changeHeader}
       setChangeHeader={setChangeHeader}
       >
       </Main>

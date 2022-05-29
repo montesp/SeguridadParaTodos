@@ -8,7 +8,6 @@ import {
   } from "react-router-dom";
 
 function Main({
-    changeHeader,
     setChangeHeader,
 }){
 
@@ -21,7 +20,6 @@ function Main({
                             path="/"
                             element={
                                 <ArticlesContainer
-                                changeHeader={changeHeader}
                                 setChangeHeader={setChangeHeader}
                                 />
                             }>
