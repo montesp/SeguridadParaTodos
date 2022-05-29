@@ -1,0 +1,16 @@
+.paragraph-container {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+}
+
+.paragraph__title {
+    font-size: 3.2rem;
+    margin-bottom: 10px;
+}
+
+.paragraph__text {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+}
+

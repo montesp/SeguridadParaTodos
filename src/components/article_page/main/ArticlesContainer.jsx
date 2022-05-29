@@ -1,17 +1,42 @@
 import React from "react";
 import { Article } from "./Article";
 
+import './ArticlesContainer.css';
+
 function ArticlesContainer({
-    children,
     setChangeHeader,
 }){
 
     setChangeHeader(false);
     return(
-        <section>
-            <h1>Nuevos Artículos</h1>
-            <section className="articles-container">
-                {children}
+        <div className="articles-container">
+            <h1 className="articles-container__title">Nuevos Artículos</h1>
+            <section className="articles-container__article">
+
+                <Article
+                    setChangeHeader={setChangeHeader}
+                    props = {{
+
+                        title:"El nuevo antivirus del que todos están hablando",
+                        to:"/article1"
+                    }}
+                />
+                <Article
+                    setChangeHeader={setChangeHeader}
+                    props = {{
+                        title:"¿Conoces todos los tipos de estáfa electrónica?",
+                        to:"/article3"
+                    }}
+                />
+                <Article
+                    setChangeHeader={setChangeHeader}
+                    props = {{
+
+                        title:"Como usar tu tarjet online y obrevivir en el intento",
+                        to:"/article2"
+                    }}
+                />
+
                 <Article
                     setChangeHeader={setChangeHeader}
                     props = {{
@@ -36,7 +61,12 @@ function ArticlesContainer({
                     }}
                 />
             </section>
-        </section>
+
+            <secttion className='' >
+
+            </secttion>
+
+        </div>
 
     )
 }

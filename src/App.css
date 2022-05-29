@@ -26,34 +26,6 @@ body {
   height: 100vh;
 }
 
-
-.product-container {
-  display: flex;
-  padding: 5px 10px;
-  /* align-items: center; */
-  justify-content: center;
-}
-
-.product-container img {
-  width: 84px;
-  height: 84px;
-  margin-right: 15px;
-}
-
-.product-container h1 {
-  font-family: 'Montserrat', sans-serif;
-  align-self: center;
-  font-size: 4.2rem;
-  font-weight: 700;
-  line-height: 2.8rem;
-}
-
-.username {
-  width: 30%;
-  font-size: 2.2rem;
-  text-align: center;
-}
-
 .main {
   display: flex;
   flex-direction: column;
@@ -62,18 +34,7 @@ body {
   padding-top: 20px;
 }
 
-.main-title {
-  text-align: center;
-  font-size: 4.2rem;
-  font-weight: 500;
-}
 
-.articles-container {
-  display: grid;
-  gap: 20px;
-  margin: 40px auto 0;
-  grid-template-columns: repeat(3, 1fr);
-}
 
 .article-card {
   display: flex;
@@ -82,7 +43,7 @@ body {
   position: relative;
   max-width: 540px;
   min-width: 240px;
-  height: 240px;
+  height: 250px;
   border-radius: 20px 5px;
   background-image: url("./assets/images/ciberseguridad.jpg");
   background-repeat: none;
