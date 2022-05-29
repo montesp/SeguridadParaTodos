@@ -60,7 +60,7 @@ function createQuestion(question){
         setResponse(newResponse){
             this.isCorrect = this.rightAnswer === newResponse + 1
         }
-        
+
     }
 
 }

@@ -5,8 +5,11 @@ function ArticlePage({props}){
     return(
         <section className="ArticlePage-card">
             <h4>{props.title}</h4>
-            <img src={props.img} className="img-page">
-            </img>
+            <img
+            src={props.img}
+            className="img-page"
+            alt="img"
+            />
             <div>
                 {props.body}
             </div>

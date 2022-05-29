@@ -1,0 +1,13 @@
+.header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-size: 2.4rem;
+    color: var(--text-color);
+    /* background-color: var(--header); */
+    background-image: linear-gradient(270deg, #c3fb63 0, #abfa66 12.5%, #8ff86b 25%, #6df571 37.5%, #3cf278 50%, #00ee81 62.5%, #00eb8b 75%, #00e798 87.5%, #00e4a5 100%);
+    
+}

@@ -1,22 +1,20 @@
-import React from 'react';
+import {Fragment} from 'react';
 import { Main } from './components/article_page/main/Main';
-import { Header } from './components/article_page/header/Header';
-import { TitleName } from './components/article_page/header/TitleName';
-import { Username } from './components/article_page/header/Username';
+import { HeaderContainer } from './components/article_page/header/header-container/HeaderContainer';
+import { TitleName } from './components/article_page/header/title-name/TitleName';
 
 import './App.css';
 
 
 function App() {
   return (
-    <React.Fragment>
-      <Header>
+    <Fragment>
+      <HeaderContainer>
         <TitleName/>
-        <Username/>
-      </Header>
+      </HeaderContainer>
       <Main>
       </Main>
-    </React.Fragment>
+    </Fragment>
   );
 }
 

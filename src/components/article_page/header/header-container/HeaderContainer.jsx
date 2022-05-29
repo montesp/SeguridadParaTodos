@@ -1,6 +1,6 @@
-import React from "react";
+import './HeaderContainer.css'
 
-function Header(props){
+function HeaderContainer(props){
     return(
         <header className="header">
             {props.children}
@@ -8,4 +8,4 @@ function Header(props){
     )
 }
 
-export { Header };
+export { HeaderContainer };

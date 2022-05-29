@@ -1,0 +1,6 @@
+.title-name {
+    grid-column: 2 / 8  ;
+    grid-row: 0;
+    font-size: 5.5rem;
+    text-align: left;
+}

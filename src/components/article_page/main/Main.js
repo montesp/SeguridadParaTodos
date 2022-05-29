@@ -8,7 +8,6 @@ import {
   } from "react-router-dom";
 
 function Main(props){
-    
     return(
         <Router>
             <main className="main">
@@ -24,10 +23,10 @@ function Main(props){
                     }>
 
                 </Route>
-                <Route 
+                <Route
                     path="/article1"
                     element={
-                        <ArticlePage           
+                        <ArticlePage
                             props = {{
                                     title:"Sale nuevo anitvirus: más potente que karspersky",
                                     img:"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -42,7 +41,6 @@ function Main(props){
                                             <p>
                                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                                             </p>
-                                            
                                         </div>,
                                     questions:[
                                         {
@@ -60,16 +58,16 @@ function Main(props){
                                             answers:["Karspersky","Norton","Avast","Windows Defender"],
                                             rightAnswer:3
                                         }
-                            
+
                                     ]
                                 }}
                         />
                     }
                 >
                 </Route>
-                <Route 
+                <Route
                     path="/article2"
-                    element = {<ArticlePage           
+                    element = {<ArticlePage
                         props = {{
                                 title:"Como usar tus tarjetas de manera segura en internet",
                                 img:"https://gestion.pe/resizer/u1CIiiDmDYAISHd20TCeLyGHCW4=/580x330/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/W4TYJL6NRBER3ICAK245T7T47M.jpg",
@@ -108,9 +106,9 @@ function Main(props){
                     />}
                 >
                 </Route>
-                <Route 
+                <Route
                     path="/article3"
-                    element = {<ArticlePage           
+                    element = {<ArticlePage
                         props = {{
                                 title:"Como proteger tu correo electronico de estafadores y embusteros",
                                 img:"https://www.nubedigital.mx/flexo/assets/imagenesblog/completas/correo-electronico-ndmx-b.jpg",
@@ -125,7 +123,6 @@ function Main(props){
                                         <p>
                                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                                         </p>
-                                        
                                     </div>,
                                 questions:[
                                     {
