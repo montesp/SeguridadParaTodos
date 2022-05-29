@@ -1,14 +1,12 @@
 import './TitleName.css';
 
-function TitleName(){
+function TitleName({changeHeader}){
     return(
-        <div className="title-name">
-            <h1>
-            Seguridad <br/>
-            para <br/>
-            todos
-             </h1>
-        </div>
+        <h1 className={`title-name ${changeHeader && "title-name__changed"}`}>
+            <div>Seguridad </div>
+            <div>Para</div>
+            <div>Todos</div>
+        </h1>
     )
 }
 

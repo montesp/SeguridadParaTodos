@@ -1,9 +1,13 @@
+import { TitleName } from '../title-name/TitleName'
+
 import './HeaderContainer.css'
 
-function HeaderContainer(props){
+function HeaderContainer({changeHeader}){
     return(
-        <header className="header">
-            {props.children}
+        <header className={`header ${changeHeader && "header__changed"}`}>
+           <TitleName
+               changeHeader={changeHeader}
+           />
         </header>
     )
 }

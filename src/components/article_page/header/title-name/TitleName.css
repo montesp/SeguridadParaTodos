@@ -1,6 +1,18 @@
 .title-name {
+    display: flex;
+    flex-direction: column;
     grid-column: 2 / 8  ;
     grid-row: 0;
-    font-size: 5.5rem;
+    font-size: 10.5rem;
     text-align: left;
+}
+
+.title-name__changed {
+    flex-direction: row;
+    font-size: 3.5rem;
+    
+}
+
+.title-name__changed div {
+    margin-right: 7px;
 }
